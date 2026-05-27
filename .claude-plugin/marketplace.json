@@ -1,7 +1,7 @@
 {
   "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
   "name": "dotnet-doc-skills",
-  "description": "Three Claude Code skills for documenting C#/.NET code: doc-cs generates Russian-language XML-doc comments; doc-md generates external Markdown docs (one .md per class, mirrors solution structure); doc-db reverse-engineers an Oracle DB schema from raw ADO.NET code.",
+  "description": "Four Claude Code skills for documenting C#/.NET code: doc-cs generates Russian-language XML-doc comments; doc-md generates external Markdown docs (one .md per class, mirrors solution structure); doc-db reverse-engineers an Oracle DB schema from raw ADO.NET code; doc-folder generates a single in-place README.md overview of a multi-project folder.",
   "owner": {
     "name": "tdav",
     "email": "tdavron@gmail.com"
@@ -10,7 +10,7 @@
     {
       "name": "dotnet-doc-skills",
       "source": "./",
-      "description": "C#/.NET documentation skills (Russian output): doc-cs (inline XML-doc), doc-md (external Markdown, one file per class), doc-db (Oracle schema reverse-engineering from ADO.NET code).",
+      "description": "C#/.NET documentation skills (Russian output): doc-cs (inline XML-doc), doc-md (external Markdown, one file per class), doc-db (Oracle schema reverse-engineering from ADO.NET code), doc-folder (single in-place README.md folder overview).",
       "category": "development"
     }
   ]

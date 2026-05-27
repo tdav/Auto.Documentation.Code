@@ -1,7 +1,7 @@
 {
   "name": "dotnet-doc-skills",
-  "description": "C#/.NET documentation skills with Russian output. doc-cs: inline XML-doc comments per Microsoft recommended tags. doc-md: external Markdown docs (one .md per class, mirrors solution structure, cross-links). doc-db: reverse-engineers an Oracle relational schema purely from C# source.",
-  "version": "1.0.6",
+  "description": "C#/.NET documentation skills with Russian output. doc-cs: inline XML-doc comments per Microsoft recommended tags. doc-md: external Markdown docs (one .md per class, mirrors solution structure, cross-links). doc-db: reverse-engineers an Oracle relational schema purely from C# source. doc-folder: single in-place README.md overview of a multi-project folder (projects -> namespaces -> classes with per-class purpose/logic).",
+  "version": "1.1.0",
   "author": {
     "name": "tdav",
     "email": "tdavron@gmail.com"
@@ -19,6 +19,7 @@
     "ado.net",
     "database-schema",
     "reverse-engineering",
+    "readme",
     "russian"
   ]
 }
