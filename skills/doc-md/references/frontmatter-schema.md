@@ -35,18 +35,39 @@ summary: Схема БД, восстановленная из ADO.NET-кода.
 ---
 ```
 
+## Схема для обзора папки (`type: folder-overview`) — файл `README.md`
+
+Генерируется skill `doc-folder`: один обзорный `README.md` в корне папки.
+
+```yaml
+---
+title: Sample.Solution — обзор кода   # имя документируемой папки
+type: folder-overview
+generator: doc-folder                  # метка происхождения файла
+root: .                                # относительный путь документируемой папки
+projects: [Sample.Dico, Sample.App]   # имена .csproj-проектов папки
+generated: 2026-05-27                  # дата генерации (YYYY-MM-DD)
+tags: [overview, csharp, navigation]
+summary: Обзорная карта классов мульти-проектной папки.   # одна строка, с точкой
+---
+```
+
 ## Правила полей
 
 | Поле | Обяз. | Тип | Правила |
 |---|---|---|---|
 | `title` | да | строка | Без кавычек, если нет спецсимволов YAML (`:`, `#`). |
-| `type` | да | enum | `class` \| `interface` \| `enum` \| `database-schema`. Только нижний регистр. |
+| `type` | да | enum | `class` \| `interface` \| `enum` \| `database-schema` \| `folder-overview` \| `index`. Только нижний регистр. |
 | `namespace` | для class | строка | Как в коде. |
 | `layer` | для class | enum | `data-access` \| `service` \| `model` \| `mapping` \| `controller` \| `util` \| `other`. |
 | `source` | для class | путь | Относительный от корня репозитория, через `/`. |
 | `tables` | да | список | Имена в формате `СХЕМА.ТАБЛИЦА`. Пустой список `[]`, если класс не работает с БД. **Это мост к `doc-db`.** |
 | `tags` | да | список | Нижний регистр, kebab-case. 2–5 тегов. |
 | `summary` | да | строка | Одно предложение, с точкой. Без переносов. |
+| `generator` | для folder-overview | строка | Имя skill-генератора, напр. `doc-folder`. Метка происхождения файла. |
+| `root` | для folder-overview | путь | Относительный путь документируемой папки (`.` если это корень). |
+| `projects` | для folder-overview | список | Имена `.csproj`-проектов в папке. |
+| `generated` | для folder-overview | дата | Дата генерации в формате `YYYY-MM-DD`. |
 
 ## Как заполнять `tables`
 
