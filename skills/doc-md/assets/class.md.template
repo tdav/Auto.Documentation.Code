@@ -1,0 +1,72 @@
+---
+title: {{ClassName}}
+type: class
+namespace: {{Namespace}}
+layer: {{data-access|service|model|mapping|controller|util|other}}
+source: {{SourceRelativePath}}
+tables: [{{таблицы класса через запятую, или пусто}}]
+tags: [{{2-5 тегов, нижний регистр}}]
+summary: {{одно предложение с точкой}}
+---
+
+# `{{ClassName}}`
+
+**Namespace:** `{{Namespace}}`
+**Файл:** [`{{SourceRelativePath}}`]({{SourceLinkRelative}})
+{{#if BaseClass}}**Наследует:** [`{{BaseClass}}`]({{BaseClassLink}}){{/if}}
+{{#if Interfaces}}**Реализует:** {{InterfaceLinks}}{{/if}}
+
+---
+
+## Свойства
+
+| Свойство | Тип | Доступ | Описание |
+|---|---|---|---|
+| `{{PropertyName}}` | `{{PropertyType}}` | `{{Modifier}}` | {{Description}} |
+
+---
+
+## Конструкторы
+
+### `{{ClassName}}({{ConstructorParams}})`
+
+{{Одно предложение: что инициализирует и зачем.}}
+
+| Параметр | Тип | Описание |
+|---|---|---|
+| `{{param}}` | `{{ParamType}}` | {{семантика параметра}} |
+
+---
+
+## Методы
+
+### `{{ReturnType}} {{MethodName}}({{Params}})`
+
+{{Одно предложение: что делает и зачем. Без пересказа имени.}}
+
+{{<!-- Только для DA-методов: -->}}
+**Операция БД:** `{{INSERT|UPDATE|SELECT|DELETE}}` → `{{SCHEMA.TABLE}}{{WHERE-условие}}`.
+
+| Параметр | Тип | Описание |
+|---|---|---|
+| `{{param}}` | {{TypeLink}} | {{семантика}} |
+
+**Возвращает:** {{что и когда; null / -1 / пустая коллекция}}.
+
+**Исключения:** `{{ExceptionType}}` — {{причина}}.
+
+{{<!-- Если override/реализация интерфейса: -->}}
+**Переопределяет:** [`{{BaseClass}}.{{MethodName}}`]({{BaseClassLink}}#{{anchor}}).
+
+См. также: {{ссылки на связанные методы}}.
+
+---
+
+## Описание класса
+
+{{Назначение класса в системе: домен, слой (DA / сервис / маппинг / модель).
+Основные паттерны использования. Связь с Oracle-таблицей (для DA-классов).}}
+
+**Зависимости:** {{TypeLinks через запятую}}.
+
+**Используется в:** {{TypeLinks через запятую}}.

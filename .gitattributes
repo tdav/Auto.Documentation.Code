@@ -1,0 +1,5 @@
+# Нормализация переводов строк
+* text=auto
+
+# Shell-скрипты всегда LF (иначе bash на Linux/macOS не запустит)
+*.sh text eol=lf

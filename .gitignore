@@ -1,0 +1,14 @@
+# Временные файлы prescan (docmd)
+_tmp/
+**/sql-facts.json
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Редакторы
+.vs/
+.idea/
+*.swp
+*~
