@@ -40,7 +40,7 @@
 
 ## Слой (layer) — те же значения, что в doc-md
 
-`data-access` · `service` · `model` · `mapping` · `controller` · `util` · `other`.
+`data-access` · `service` · `model` · `mapping` · `controller` · `util` · `test` · `other`.
 См. `../../doc-md/references/frontmatter-schema.md`, раздел «Как выбирать layer».
 
 ## Примеры
